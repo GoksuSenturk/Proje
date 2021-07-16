@@ -12,7 +12,7 @@ Kodun işleyişinin detayı şöyledir:
 
 4-	Daha sonra batch ve fırın ataması yapılması gereken kısma gelmiş oluyoruz. Bu aşamada elimizde tüm batch’lerin başlaması gereken en geç zaman bilgisi olmuş oluyor. Bu bilgiye göre tüm batch’i başlaması gereken zamana göre küçükten büyüğe sıralıyoruz ve en erken başlaması gerekeni ilk fırına bir sonrakini ikinci fırına sonrakini üçüncü fırına atıyoruz. Sonrasında atama yapılan fırınlardan minumum t’ye gelene sıradaki batch’i atıyoruz. Sonrasında tekrar minimum t’ye ulaşan fırın kontrol ediliyor ve sıradaki batch ona atanıyor. Aynı döngünün tüm batch’ler için tekrarlanması ile tüm batch’lerin fırınlara atanması tamamlanıyor.
 
-Kodda kullanılan değişkenler ve açıklamaları:
+[#Kodda kullanılan değişkenler ve açıklamaları:](url)
 t[t1,t2,t3] =fırınların kaçıncı dakikada olduğunu göstermektedir. 3 elemanlıdır çünkü problemimizde 3 fırın vardır.
 
 tc= işerin kullanacağı termocouple sayısıdır. Bu problem örneğinde işlerin hepsi için aynı ve 1 olduğu için 1'e eşitlenmiştir. Projenin devamında bir array için de her iş için ayrı ayrı tanımlanabilir.
