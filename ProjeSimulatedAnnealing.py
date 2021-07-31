@@ -489,8 +489,9 @@ batchtofirin(batch1,batch2,batch3,batch4,batch5,batch6,batch7,batch8,batch9,t2)
 firintoplamzaman2=t2[0]+t2[1]+t2[2]
 print("Komşu çözüm için fırın toplam zamanı",firintoplamzaman2)
 
-t=100 #sıcaklık
+t=10000 #sıcaklık
 n=25  #döngü sayısı
+alpha = 0.8
 p=np.exp((-(firintoplamzaman2-firintoplamzaman))/t) #kabul olasılığı
 
 randomnumber=random.random()
@@ -520,7 +521,10 @@ while n>0:
             print(t1)
             firintoplamzaman = t1[0] + t1[1] + t1[2]
             print(firintoplamzaman)
+            T = T * alpha
     n-=1
+    
+  
 
 
 
