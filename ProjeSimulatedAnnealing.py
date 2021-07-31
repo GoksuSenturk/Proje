@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 import random
 
@@ -527,10 +521,6 @@ while n>0:
             firintoplamzaman = t1[0] + t1[1] + t1[2]
             print(firintoplamzaman)
     n-=1
-
-
-# In[ ]:
-
 
 
 
